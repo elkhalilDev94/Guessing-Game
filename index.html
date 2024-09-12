@@ -1,14 +1,28 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Guessing Game</title>
-    
-  </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
 
+<body>
+    <div class="container">
+        <div class="theGame">
+            <h1 class="title">Guessing Game</h1>
+            <p>Guess a Number between 1 and 100</p>
 
+            <input type="number" id="inputGuess" max="5" min="1">
+            <button id="guess" onclick="getGuess()">Submit Guess</button>
 
-    <script src="script.js"></scriptt>
-  </body>
+            <p id="feedback"></p>
+
+            <button id="tryAgain" style="display: none;" onclick="Again()">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>

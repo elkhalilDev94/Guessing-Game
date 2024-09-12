@@ -1,0 +1,47 @@
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #ebe835;
+    position: relative;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    align-content: center;
+}
+
+.theGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 330px;
+    height: 330px;
+    background-color: aquamarine;
+    position: absolute;
+    left: calc(50% - 165px);
+    top: calc(50% - 165px);
+    padding: 5px;
+    box-shadow: 1px 2px #333;
+
+    input[type="number"] {
+        text-align: center;
+        border: 2px solid black;
+        font-size: 25px;
+        margin-bottom: 12px;
+    } 
+
+    button[id="guess"] {
+        font-size: 14px;
+        background-color: rgb(131, 17, 116);
+        color: white;
+        height: 30px;
+    }
+
+    button[id="tryAgain"] {
+        font-size: 14px;
+        background-color: rgb(51, 39, 22);
+        color: white;
+        height: 30px;
+    }
+}
